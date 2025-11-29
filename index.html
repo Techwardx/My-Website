@@ -1,50 +1,63 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!--
+ * @Author: your name
+ * @Date: 2022-04-16 16:13:50
+ * @LastEditTime: 2022-04-17 23:31:48
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /MyHtmlPages/index.html
+-->
+
+<!-- new gitee
+changed on server -->
+
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>郭子禾の个人主页 H-Studio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>郭子禾の个人主页</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>  
 </head>
+
 <body>
-    <!-- 导航栏 -->
-    <nav id="navbar" class="navbar">
-        <div class="nav-content">
-            <div id="nav-logo" class="logo-placeholder"></div>
-            <div class="nav-center">
-                <a href="#" id="nav-title-main" class="nav-title-main"></a>
-                <a href="#" id="nav-title-sub" class="nav-title-sub"></a>
-            </div>
-            <div class="nav-right">
-                <a href="#" id="nav-user-icon" class="user-icon-link"></a>
-            </div>
-        </div>
-    </nav>
+	<div class="headtitle">郭子禾の个人主页</div>
+	<div class="picdiv">
+		<a href="#"><img src="images/index_head_pic.jpeg" alt="head pic" class="headpic"></a>
+	</div>
 
-    <!-- 主页 Hero 区域 -->
-    <header id="home-hero" class="hero-section">
-        <div class="bg-layer" id="hero-bg"></div>
-        <div class="overlay"></div>
-        <div class="hero-content fade-in-init">
-            <h1 id="hero-title"></h1>
-            <p id="hero-subtitle"></p>
-        </div>
-    </header>
+	<div class="channelbox">
+		<div class="divleft">
+			<a href="https://space.bilibili.com/1865306801" target="_blank"><img src="images/7segments.jpeg" alt="7segments but not found" class="channelpic"></a>
+			<p></p>
+			<a href="https://space.bilibili.com/1865306801" target="_blank">7segments</a> 
+		</div>
+		<div class="divright"> 
+			<a href="https://v.ixigua.com/NKja7cT/" target="_blank"><img src="images/study.png" alt="study pic but not found" class="channelpic" ></a>
+			<p></p>
+			<a href="https://v.ixigua.com/NKja7cT/" target="_blank">学习</a>
+		</div>
+		<div class="divcenter">
+			<a href="tutu.html" target="_blank"><img src="images/tutu/tutuhead.png" alt="tutu pic but not found" class="channelpic"></a>
+			<p></p>
+			<a href="tutu.html" target="_blank">图图の个人主页</a>
+		</div>
+	</div>
 
-    <!-- 主页模块容器 -->
-    <main id="modules-container"></main>
+	<div class="menu">
+		<a href="menu.html" target="_blank">
+		<img src="images/Santa Claus.jpg" alt="" class="menupic">
+	</a>
+		<div class="overlay">
+			<a href="menu.html" target="_blank">
+			<div class="text">Holiday Menu</div>
+		</a>
+		</div>
+	</div>
 
-    <!-- 页脚 -->
-    <footer class="footer">
-        <div class="footer-content">
-            <a id="footer-old-link" href="#" target="_blank"></a>
-            <div class="footer-copyright">
-                <span id="footer-copy-text"></span>
-                <a id="footer-icp-link" href="#" target="_blank"></a>
-            </div>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
+	<div id="footer"></div>
+	<script type="text/javascript"> $("#footer").load("footer.html");</script>
+	
 </body>
 </html>
+   
