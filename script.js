@@ -36,7 +36,7 @@ const websiteConfig = {
             className: "module-tutu",
             title: "图图の个人主页",
             bg: "./photos/tutu.jpg",
-            link: "./oldweb/tutu.html"
+            link: "./v1.0/tutu.html"
         }
     ],
 
@@ -48,7 +48,7 @@ works: Array(6).fill({
 
 
     footer: {
-        oldLink: { text: "点击跳转老版网页 >", url: "./oldweb/oldweb.html" },
+        oldLink: { text: "点击跳转老版网页 >", url: "./v1.0/index.html" },
         copyright: "Copyright © 西禾北木科技有限公司版权所有",
         icp: { text: "京ICP备2022002335号-3", url: "https://beian.miit.gov.cn/#/Integrated/index" }
     }
