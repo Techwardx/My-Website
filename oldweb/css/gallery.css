@@ -1,0 +1,85 @@
+
+body{
+    background-color: #666999;
+    padding:25px;
+}
+.header{
+    text-align: center;
+}
+#app{
+    margin: auto;
+}
+.header h1{
+    background:-webkit-linear-gradient(#fff,#8f70ba);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.container{
+    padding: 6px;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 500px;
+    box-shadow: 0 5px 8px #0000007a;
+}
+.gallery .activePhoto{
+    width: 100%;
+    margin-bottom: 5px;
+    padding-bottom: 150%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #fff;
+    position: relative;
+}
+.gallery .activePhoto button{
+    border:none;
+    background-color: transparent;
+    font-size: 39px;
+    color:#fff;
+    opacity: 0.6;
+    position: absolute;
+    outline: none;
+    height: 100%;
+}
+.gallery .activePhoto button hover{
+    opacity: 1;
+}
+.gallery .activePhoto button.previous{
+    padding: 0 1em 0 0.1em;
+    left: 0;
+    background: linear-gradient(to right,rgba(0,0,0,0.0) 0%,rgba(0,0,0,0,) 100%);
+}
+.gallery .activePhoto button.next{
+    padding:0 0.7em, 0 1em;
+    right: 0;
+    background:linear-gradient(to right,rgba(0,0,0,0.0) 0%,rgba(0,0,0,0,) 100%);
+}
+.gallery .thumbnails{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+    grid-gap: 5px;
+}
+.gallery .thumbnails div{
+width: 100%;
+border:2px solid #fff;
+border-radius: 6px;
+outline: 2px solid #fff;
+cursor: pointer;
+padding-bottom: 95%;
+background-size: cover;
+background-position:top;
+background-repeat: no-repeat;
+opacity: 1;
+}
+.gallery .thumbnails div:hover{
+    opacity: 0.8;
+}
+.gallery .thumbnails div.active{
+    outline-color: #5c4084;
+    opacity: 1;
+}
